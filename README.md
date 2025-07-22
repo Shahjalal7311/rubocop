@@ -22,3 +22,16 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+## Setup Rubocop for pre-commit hook
+
+run below only the first time
+```bash
+./bin/setup-hooks
+```
+### Rubocop autocorrect 
+after commit fail, safe autocorrect will be done by running this command. 
+```bash
+./bin/auto-correct-rubocop
+```
