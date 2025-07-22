@@ -189,8 +189,11 @@ GEM
     parser (3.3.8.0)
       ast (~> 2.4.1)
       racc
+    pluginator (1.5.0)
     pp (0.6.2)
       prettyprint
+    pre-commit (0.40.0)
+      pluginator (~> 1.5)
     prettyprint (0.2.0)
     prism (1.4.0)
     propshaft (1.2.1)
@@ -251,7 +254,7 @@ GEM
     reline (0.6.2)
       io-console (~> 0.5)
     rexml (3.4.1)
-    rubocop (1.78.0)
+    rubocop (1.75.8)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -259,7 +262,7 @@ GEM
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 2.9.3, < 3.0)
-      rubocop-ast (>= 1.45.1, < 2.0)
+      rubocop-ast (>= 1.44.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
     rubocop-ast (1.46.0)
@@ -279,6 +282,9 @@ GEM
       rubocop (>= 1.72)
       rubocop-performance (>= 1.24)
       rubocop-rails (>= 2.30)
+    rubocop-rspec (3.6.0)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.72, >= 1.72.1)
     ruby-progressbar (1.13.0)
     rubyzip (2.4.1)
     securerandom (0.4.1)
@@ -370,10 +376,15 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal
+  pre-commit
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.2)
+  rubocop (~> 1.75.0)
+  rubocop-performance
+  rubocop-rails
   rubocop-rails-omakase
+  rubocop-rspec
   selenium-webdriver
   solid_cable
   solid_cache
