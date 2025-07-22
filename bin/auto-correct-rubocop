@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Run RuboCop on staged Ruby files
+git diff --cached --name-only --diff-filter=ACM | grep '\.rb$' | xargs bundle exec rubocop -a --force-exclusion
