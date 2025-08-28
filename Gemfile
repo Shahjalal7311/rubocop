@@ -55,7 +55,7 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
   gem "pre-commit", require: false
-  gem 'rubocop', '~> 1.78.0', require: false
+  gem 'rubocop', '~> 1.80.1', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
   gem 'rubocop-performance', require: false
